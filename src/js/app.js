@@ -24,7 +24,7 @@ export default class MathMath {
     if (this._stoned === true) {
       resultAttack = powerAttack - Math.log2(this.interval) * 5;
     }
-    return resultAttack;
+    return resultAttack < 0 ? resultAttack : 0;
   }
 }
 
